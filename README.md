@@ -1,2 +1,2 @@
 # ahscs-website
-AHS Computer Science Club Website
+AHS Computer Science Website
