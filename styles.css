@@ -3,22 +3,22 @@
 body {
     font-family: 'Fredoka', sans-serif;
 }
-
+/* 
 .header_topbar {
     margin-top: -3.5%;
     margin-left: 4%;
 }
 
 .opp_topbar {
-    margin-top: 5%;
-    margin-left: 4%;
-    font-size: 1rem;
+    margin-left: 74.5%;
+    margin-top: -2.7%;
+    font-size: 1.5rem;
 }
 
 .events_topbar {
-    margin-top: 2%;
-    margin-left: 4%;
-    font-size: 1rem;
+    margin-left: 85%;
+    margin-top: -2.7%;
+    font-size: 1.5rem;
 }
 
 .topbar {
@@ -26,8 +26,25 @@ body {
 }
 
 .team_topbar {
-    margin-top: 5px;
-    margin-left: 67%;
+    margin-left: 68%;
+    margin-top: -2.7%;
+    display: block;
+    font-size: 1.5rem;
+} */
+
+.ahscsico:hover {
+    transform: scale(1.1);
+}
+
+.ahscsico {
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    font-size: 2rem;
 }
 
 .bottom {

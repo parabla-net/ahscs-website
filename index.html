@@ -15,26 +15,38 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
     <body>
-        <div id="topbar" class="topbar">
-            <a href="./index.html">
-                <img class="img_topbar" src="./images/ahs.svg" alt="AHS Redirect" style="width:75px; height:75px;">
-              </a>
-                
-              <h1 class="header_topbar" style="font-size: 3rem;">AHS Computer Science Club</h1>
-              <a style="font-size: 2rem;" class="team_topbar">Team</a>
-              <a style="font-size: 2rem;" class="opp_topbar">Opportunities</a>
-              <a style="font-size: 2rem;" class="events_topbar">Events</a>
-        </div>
+        <nav class="navbar bg-light navbar-light navbar-expand-lg">
 
-        <hr size="10px">
+            <a href="/" class="navbar-brand"><img class="ahscsico" src="./images/ahsCS.png" width="100px" height="100px" alt="AHS Computer Science Club" title="AHS Computer Science Club"></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a style="color: black;" class="nav-link">AHS Computer Science Club</a></li>
+                    <li class="nav-item"><a href="/team" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="/opportunities" class="nav-link">Opportunities</a></li>
+                    <li class="nav-item"><a href="/events" class="nav-link">Events</a></li>
+                </ul>
+    
+            </div>
+    </nav>
 
         <div class="ourmission">
+            <br>
             <h1 data-aos-delay="50" data-aos="fade-up">Our Mission</h1>
 
             <p data-aos="fade-up" style="margin-left: 8%; margin-top: 1%;">is to introduce the community to the many branches we offer </p>
             <p data-aos="fade-up" data-aos-delay="100" style="margin-left: 8%;">and help develop their skills to the next level. (still not done)</p>
 
-            <button data-aos="fade-up" style="margin-left: -4%; margin-top: 1%;" class="btn btn-outline-primary">Join us!</button>
+            <a href="/join/index.html">
+                <button data-aos="fade-up" style="margin-left: -4%; margin-top: 1%;" class="btn btn-outline-primary">Join us!</button>
+            </a>
+            
 
         </div>
 
@@ -56,7 +68,7 @@
         </div>
 
         <div class="benefits">
-            <h1 data-aos-delay="400" data-aos="fade-up" style="margin: 100px;">The Benefits</h1>
+            <h1 data-aos-delay="50" data-aos="fade-up" style="margin: 100px;">The Benefits</h1>
 
         </div>
 
