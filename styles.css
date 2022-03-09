@@ -3,34 +3,21 @@
 body {
     font-family: 'Fredoka', sans-serif;
 }
-/* 
-.header_topbar {
-    margin-top: -3.5%;
-    margin-left: 4%;
+
+.footer {
+    color: white;
+    text-align: left;
+    text-decoration-line: underline;
+    margin-left: 2%;
 }
 
-.opp_topbar {
-    margin-left: 74.5%;
-    margin-top: -2.7%;
-    font-size: 1.5rem;
+.footerover {
+    color: white;
+    text-align: right;
+    text-decoration-line: underline;
+    margin-bottom: -3%;
+    margin-right: 2%;
 }
-
-.events_topbar {
-    margin-left: 85%;
-    margin-top: -2.7%;
-    font-size: 1.5rem;
-}
-
-.topbar {
-    margin-top: 1%;
-}
-
-.team_topbar {
-    margin-left: 68%;
-    margin-top: -2.7%;
-    display: block;
-    font-size: 1.5rem;
-} */
 
 .ahscsico:hover {
     transform: scale(1.1);
@@ -49,9 +36,7 @@ body {
 
 .bottom {
     background-color: rgb(0, 0, 50);
-    height: 100px;
-    margin-bottom: 0%;
-    text-align: center;
+    height: 170px;
 }
 
 .aboutus {
