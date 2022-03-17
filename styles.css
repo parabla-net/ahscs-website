@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Crimson Pro', serif;
     display: flexbox;
 }
 
@@ -27,8 +27,8 @@ body {
 
 .ahscsico {
     transition: transform .2s;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 3rem;
     margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .bottom {
-    background-color: rgb(0, 0, 50);
+    background-color: #2F2E2E;
     height: max-content;
 }
 
@@ -50,7 +50,7 @@ body {
     overflow:auto;
 }
 .aboutus {
-    background-color: lightgray;
+    background-color: #F8F8FF;
     text-align: center;
 }
 
@@ -73,11 +73,11 @@ body {
 
 .card-title {
     font-size: 1.6rem;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .card-text {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .carousel {
@@ -96,18 +96,32 @@ body {
     margin-left: 5%;
 }
 
+
+.aesthetic {
+    background: linear-gradient(to bottom right,transparent 0%,transparent 50%,#ACBEFF 50%,#ACBEFF 100%);
+    height: 100px;
+}
+
 .benefits {
     height: 500px;
-
-    background: linear-gradient(to bottom right,transparent 0%,transparent 50%,#ACBEFF 50%,#ACBEFF 100%);
+    background-color:#ACBEFF;
     text-align: right;
     background-repeat: no-repeat;
 }
 
-h1 {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.navbar {
+    background-color: white;
+    padding:.5rem 1rem!important;
+    box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 10%);
+    z-index: 1;
 }
 
-.box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.navbar-nav {
+    margin-left:auto!important;
+}
+
+
+.btn {
+    background-color: #051E3D; 
+    color: white;
 }
