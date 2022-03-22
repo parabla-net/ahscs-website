@@ -168,3 +168,13 @@ body {
 .events {
     text-align:center;
 }
+
+.btn-normal {
+    background-color: #051E3D; 
+    color: white;
+}
+
+.btn-normal:hover {
+    color:lightgray;
+}
+
