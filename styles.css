@@ -78,10 +78,6 @@ body {
     
 }
 
-.card-text {
-    
-}
-
 .carousel {
     width:640px;
     height:360px;
@@ -109,7 +105,6 @@ body {
 }
 
 .benefits {
-    height: 500px;
     background-color:#ACBEFF;
     text-align: right;
     background-repeat: no-repeat;
@@ -165,8 +160,6 @@ body {
         background-image: url("/images/codeheadercrop.PNG");
     }
 }
-
-
 
 .events {
     text-align:center;
