@@ -78,10 +78,6 @@ body {
     
 }
 
-.card-text {
-    
-}
-
 .carousel {
     width:640px;
     height:360px;
@@ -162,6 +158,16 @@ body {
     align-items:center;
     height:300px;
     color:white;
+}
+
+@media screen and (max-width: 992px) {
+    .col {
+        flex:none;
+        margin-right:0;
+    }
+    .banner {
+        background-image: url("/images/codeheadercrop.PNG");
+    }
 }
 
 .banner-opp {
