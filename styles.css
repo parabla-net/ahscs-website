@@ -145,3 +145,26 @@ body {
     .ourmission img {
         height: 250px;
     }
+    .calendar iframe{
+        margin-left:0;
+        margin-right:0;
+    }
+    .banner {
+        background-position: center;
+    }
+}
+
+.banner {
+    background-image: url("/images/codeheader.PNG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #1e1e1e;
+    display:flex; 
+    align-items:center;
+    height:300px;
+    color:white;
+}
+
+.events {
+    text-align:center;
+}
