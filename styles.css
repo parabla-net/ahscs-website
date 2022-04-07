@@ -70,11 +70,6 @@ body {
 
 .card {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 100%;
-}
-
-.card-title {
-    font-size: 1.6rem;
     
 }
 
@@ -175,7 +170,7 @@ body {
 }
 
 .banner-opp {
-    background-image: url("/images/placeholder.png"); 
+    background-image: url("/images/tweet.png"); 
 
     /* placeholder is placeholder (obviously) replace when nessecary*/
 
@@ -188,8 +183,21 @@ body {
     color:white;
 }
 
+.team-card {
+    border-radius: 25px;
+    padding: 20px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+
 .banner-team {
-    background-image: url("/images/Peter_Griffin.png"); 
+    background-image: url("/images/codeheader.PNG"); 
 
     /* peter is also placeholder (obviously) replace when nessecary*/
 
