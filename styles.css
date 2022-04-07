@@ -50,6 +50,7 @@ body {
     padding: 0;
     overflow:auto;
 }
+
 .aboutus {
     background-color: #F8F8FF;
     text-align: center;
@@ -95,13 +96,28 @@ body {
 }
 
 .aesthetic {
-    background: linear-gradient(to bottom right,transparent 0%,transparent 50%,#ACBEFF 50%,#ACBEFF 100%);
+    background: linear-gradient(to bottom left,transparent 0%,transparent 50%,#ACBEFF 50%,#ACBEFF 100%);
     height: 100px;
+}
+
+.cooltriangle {
+    background: linear-gradient(to top right,transparent 0%,transparent 50%,#ACBEFF 50%,#ACBEFF 100%);
+    height: 100px;
+}
+
+.middleschool {
+    text-align: right;
+    background-color:#ACBEFF;
+}
+
+.transition {
+    background: linear-gradient(180deg, #FFFFFF 26%, #F8F8FF 74%);
+    height: 17px;
 }
 
 .benefits {
     background-color:#ACBEFF;
-    text-align: right;
+    text-align: left;
     background-repeat: no-repeat;
 }
 
@@ -153,6 +169,12 @@ body {
     }
     .banner {
         background-image: url("/images/codeheadercrop.PNG");
+    }
+    .aesthetic {
+        height: 50px;
+    }
+    .cooltriangle {
+        height: 50px;
     }
 }
 
