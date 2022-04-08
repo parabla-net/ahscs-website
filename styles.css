@@ -193,12 +193,15 @@ body {
 }
 
 .btn-normal {
+  transition: transform 0.2s;
   background-color: #051e3d;
   color: white;
 }
 
 .btn-normal:hover {
   color: lightgray;
+  transform: scale(1.1);
+
 }
 
 .banner-opp {
@@ -254,4 +257,22 @@ body {
     justify-content: center;
     align-self: center;
 
+}
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-family: 'Khula', sans-serif;
+  font-size:4em;
+  color:rgb(43, 255, 0);
+
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
 }

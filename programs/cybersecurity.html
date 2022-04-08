@@ -17,6 +17,13 @@
 
     <link rel="stylesheet" href="/styles.css">
 
+    <style>
+        body {
+            background: #000;
+            margin: 0;
+            color:white;
+            }
+    </style>
 
 </head>
     <body>
@@ -40,6 +47,7 @@
                     <li class="nav-item"><a href="/team" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="/opportunities" class="nav-link">Opportunities</a></li>
                     <li class="nav-item"><a href="/events/" class="nav-link">Events</a></li>
+                    <canvas id="canvas" width="1280" height="800"></canvas>
         
                 </ul>
     
@@ -53,6 +61,8 @@
             <h1 data-aos-delay="0" data-aos="fade-up" style="text-align: center;" id="cybersecurity" ></h1>
 
             <p data-aos-delay="0" data-aos="fade-up" style="text-align: center; font-size: 1.6rem;" id="cybersecuritytext" >Cyber security is the the the when the the is the the</p>
+
+
 
             
             <br>
@@ -80,6 +90,7 @@
                                     <a class="white-text" href="https://instagram.com/ahscompscience">Instagram</a>
                                     <a class="white-text" href="https://twitter.com/ahscompscience">Twitter</a>
                                     <a class="white-text" href="https://www.remind.com/join/alhambracs">Remind</a></p>
+                                    
                               </div>
                           </div>
                         
@@ -90,6 +101,7 @@
         <script src="/libraries/aos-master/dist/aos.js"></script>
         <script src="/libraries/jquery-3.6.0.min.js"></script>
         <script src="/libraries/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
+        <script src="/programs/matrix.js"></script>
         
         <script>
           AOS.init();
@@ -114,5 +126,6 @@
                     typeWriter();
                 });
             </script>
+
     </body>
 </html>

@@ -22,7 +22,7 @@
     <body>
         <nav class="navbar bg-white navbar-light navbar-expand-lg">
 
-            <a href="/" class="navbar-brand"><img class="ahscsico" src="./images/ahsCS.png" alt="Home" title="AHS Computer Science Club"></a>
+            <a href="/" class="navbar-brand"><img class="ahscsico" src="/images/ahsCS.png" alt="Home" title="AHS Computer Science Club"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -47,23 +47,12 @@
     </nav>  
 
     <div class="container">
-        <div class="ourmissiontxt">
-            <br>
-            <h1 style="font-weight: 700;">Our Mission</h1>
-
-            <p>is to introduce students to the many fields computer science  </p>
-            <p>has to offer and help develop their skills to the next level.</p>
-
-            <br>
-            
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3mOv3VskCxd2aAkUwgQWJ4Hq11lyeaf2kBjSR7pkhEKJmsg/viewform" class="btn px-5" target="_blank">Join</a>
-            </a>
-
-            <br>
-
+        <div class="robotics">
+            <div data-aos="fade-up" class='console-container' style="text-align: center;"><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+                <br>
+            <p style="font-size: 1.3rem; font-weight: 400;" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate magnam, beatae odit quia amet libero eum minus expedita iusto rerum nihil. Mollitia fugit eveniet error quasi quis id. Ex harum eveniet iure fugit dolorem nisi, officia est nobis molestiae! Dicta odit eius veritatis.</p>
         </div>
 
-        <div class="ourmission"><img src="./images/man-alt.png"> </img></div>
     </div>
 
         <footer>
@@ -95,6 +84,60 @@
         
         <script>
           AOS.init();
+        </script>
+
+        <script>
+            // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Robotics', 'Robot', 'Beep Boop Bop', 'Bot'], 'text',['green','lime','yellow']);
+
+function consoleText(words, id, colors) {
+                if (colors === undefined) colors = ['#fff'];
+                var visible = true;
+                var con = document.getElementById('console');
+                var letterCount = 1;
+                var x = 1;
+                var waiting = false;
+                var target = document.getElementById(id)
+                target.setAttribute('style', 'color:' + colors[0])
+                window.setInterval(function() {
+
+                    if (letterCount === 0 && waiting === false) {
+                    waiting = true;
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    window.setTimeout(function() {
+                        var usedColor = colors.shift();
+                        colors.push(usedColor);
+                        var usedWord = words.shift();
+                        words.push(usedWord);
+                        x = 1;
+                        target.setAttribute('style', 'color:' + colors[0])
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                    } else if (letterCount === words[0].length + 1 && waiting === false) {
+                    waiting = true;
+                    window.setTimeout(function() {
+                        x = -1;
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                    } else if (waiting === false) {
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    letterCount += x;
+                    }
+                }, 120)
+                window.setInterval(function() {
+                    if (visible === true) {
+                    con.className = 'console-underscore hidden'
+                    visible = false;
+
+                    } else {
+                    con.className = 'console-underscore'
+
+                    visible = true;
+                    }
+                }, 400)
+                }
         </script>
     </body>
 </html>
