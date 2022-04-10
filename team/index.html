@@ -13,7 +13,85 @@
 
     <link rel="stylesheet" href="/libraries/aos-master/dist/aos.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://kit.fontawesome.com/71be41e2b4.js" crossorigin="anonymous"></script>
+
+    <style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+ text-align: center;
+ align-items: center;
+}
+    </style>
 
 </head>
     <body>
@@ -51,141 +129,139 @@
       </div>
     </div> <br>
 
-<!-- <div class="container"> possible carousel? if so, imagesneedded
-  <div class="slideshow" >
-  <div id="carousel-captions" class="carousel slide" data-bs-ride="carousel" style="margin: 0 auto; max-width: 100%; height: auto;">
-
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/images/hourofcode1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/images/hourofcode2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/images/hourofcode3.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-captions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carousel-captions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  </div>
-</div> -->
-
-
-
-<!-- bootstrap cards for team -->
-<div class="container px-4 overflow-hidden " class="team">
-  <div class="row gx-5">
-
-    <div class="col py-3">
-      <div class="card text-center " class="team-card">
-        <img class="card-img-top" src="/images/tweet.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Brian</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="mailto:placeholder@place.holder" class="btn btn-normal">Email</a>
+    <!--create a container for the team cards-->
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/images/Peter_Griffin.png" alt="Jane" style="width:50%; height: 50%;">
+            <div class="container">
+              <h2>Bernhard Leffler</h2>
+              <p class="title">Founder</p>
+              <p>I will now recite a classical text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium consequuntur modi quaerat quisquam commodi alias incidunt, iste laboriosam nam, veritatis, ratione minima placeat voluptatum.</p>
+              <a href="mailto:place@holder.lol">Daniella.Yundt@gmail.com</a>
+              <br><br>
+              <a><button class="btn btn-normal"><i class="fa-solid fa-phone-volume"></i> Contact</button></a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="/images/tweet.png" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Co-Founder</p>
+              <p>hagagagaha</p>
+              <a href="mailto:place@holder.lol">ggggggg.eeeeeeee@gmail.com</a>
+              <br><br>
+              <a><button class="btn btn-normal"><i class="fa-solid fa-phone-volume"></i> Contact</button></a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="/images/man.png" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Website Creator ( ͡° ͜ʖ ͡°) </p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <a href="mailto:place@holder.lol">lemon.xd@gmail.com</a>
+              <br><br>
+              <a><button class="btn btn-normal"><i class="fa-solid fa-phone-volume"></i> Contact</button></a>
+              <br>
+              <br>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/images/placeholder.png" alt="Jane" style="width:50%; height: 50%;">
+            <div class="container">
+              <h2>Michael Smith</h2>
+              <p class="title">Human Brand Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <a href="mailto:place@holder.lol">ggggggg.ssss@gmail.com</a>
+              <br><br>
+              <a><button class="btn btn-normal"><i class="fa-solid fa-phone-volume"></i> Contact</button></a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="/images/man-alt.png" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Jose Joseph</h2>
+              <p class="title">International Marketing Associate</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <a href="mailto:place@holder.lol">Consuelo72@hotmail.com</a>
+              <br><br>
+              <a><button class="btn btn-normal"><i class="fa-solid fa-phone-volume"></i> Contact</button></a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="/images/man.png" alt="John" style="width:100%">
+            <div class="container">
+              <h2>Superdude Joe</h2>
+              <p class="title">Dynamic Research Orchestrator</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <a href="mailto:place@holder.lol">fortnite.battle@pass.com</a>
+              <br><br>
+              <a><button class="btn btn-normal"><i class="fa-solid fa-phone-volume"></i> Contact</button></a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+
+      
     
-    <div class="col py-3">
-      <div class="card text-center " class="team-card">
-        <img class="card-img-top" src="/images/man-alt.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Josh</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="mailto:placeholder@place.holder" class="btn btn-normal">Email</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col py-3">
-      <div class="card text-center " class="team-card">
-        <img class="card-img-top" src="/images/ahsCS.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Joshua</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="mailto:placeholder@place.holdera" class="btn btn-normal">Email</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row gx-5">
-
-    <div class="col py-3">
-      <div class="card text-center " class="team-card">
-        <img class="card-img-top" src="/images/placeholder.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Diana</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="mailto:placeholder@place.holder" class="btn btn-normal">Email</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col py-3">
-      <div class="card text-center " class="team-card">
-        <img class="card-img-top" src="/images/ahs.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Elias</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="mailto:placeholder@place.holder" class="btn btn-normal">Email</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col py-3">
-      <div class="card text-center " class="team-card">
-        <img class="card-img-top" src="/images/man.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Family Guy Enjoyer</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="mailto:placeholder@place.holder" class="btn btn-normal">Email</a>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
 
 
 
 <br>
     
 <footer>
-    <div class="container-fluid">
-        <div class="bottom py-3 px-3">
-                <br>
-                    <div class="hstack gap-2" class="footertext">
-                        <div class="vstack gap-3">
-                            <div class="white-text" class="underlined-text" style="font-size: 1.6rem; text-decoration: underline;" class="bg-none">AHS CS Club</div>
-                            <div class="white-text" class="underlined-text" class="bg-none ">Receive updates on our Remind!</div>
-                            <div class="white-text" class="underlined-text" class="bg-none ">Text @ahscs101 to 81010.</div>
-                          </div>
-                          <div class="vstack gap-6">
-                              <h3 class="white-text">Socials</h3>
-                                <a class="white-text" href="https://discord.gg/MAqeXJJ">Discord</a>
-                                <a class="white-text" href="https://instagram.com/ahscompscience">Instagram</a>
-                                <a class="white-text" href="https://twitter.com/ahscompscience">Twitter</a> </p>
-                          </div>
-                      </div>
-                    
-        </div>
-    </div>
+  <div class="container-fluid">
+  <div class="bottom py-3 px-3">
+          <br>
+              <div class="hstack gap-2" class="footertext">               
+                  <div class="vstack gap-3">
+                      <div class="white-text" class="underlined-text" style="font-size: 1.6rem; text-decoration: underline;" class="bg-none">Alhambra CS Club</div>
+                      <div class="white-text" class="underlined-text" class="bg-none ">Questions? <a href="mailto:matthew@parabla.net" style="color: white;">Email us.</a></div>
+                      <div class="white-text" class="underlined-text" class="bg-none ">Built by Parabla. </div>
+                    </div>
+                    <div class="vstack gap-6">
+                        <h3 class="white-text">Socials</h3>
+                          <a class="white-text" href="https://discord.gg/MAqeXJJ"><i class="fa-brands fa-discord"></i></a>
+                          <a class="white-text" href="https://instagram.com/ahscompscience"><i class="fa fa-instagram"></i></a>
+                          <a class="white-text" href="https://twitter.com/ahscompscience"><i class="fa fa-twitter"></i></a>
+                          <a class="white-text" href="https://www.remind.com/join/alhambracs"><i class="fa-regular fa-bell"></i></a>
+                    </div>
+                </div>
+              
+  </div>
+</div>
 </footer>
 
 <script src="/libraries/aos-master/dist/aos.js"></script>
