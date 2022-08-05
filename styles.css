@@ -199,7 +199,7 @@ body {
 }
 
 .btn-normal:hover {
-  color: lightgray;
+  color: rgb(255, 255, 255);
   transform: scale(1.1);
 
 }
@@ -214,7 +214,7 @@ body {
 .btn-donate:hover {
   color: rgb(216, 255, 190);
   background-color: #2b9515;
-  transform: scaleX(1.1);
+  transform: scale(1.1);
 
 }
 
