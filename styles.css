@@ -204,6 +204,20 @@ body {
 
 }
 
+.btn-donate {
+  transition: transform 0.2s;
+  background-color: #1b8505;
+  color: white;
+
+}
+
+.btn-donate:hover {
+  color: rgb(216, 255, 190);
+  background-color: #2b9515;
+  transform: scaleX(1.1);
+
+}
+
 .banner-opp {
   background-image: url("/images/tweet.png");
 
@@ -318,4 +332,10 @@ small {
 .accordian-item{
   background: transparent;
   border: none; 
+}
+
+.bullpup-logo {
+  float: right; 
+  margin: -10%;
+  margin-right: 0%;
 }
