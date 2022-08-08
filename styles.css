@@ -218,6 +218,20 @@ body {
 
 }
 
+.btn-orange {
+  transition: transform 0.2s;
+  background-color: #ff5f00;
+  color: white;
+
+}
+
+.btn-orange:hover {
+  color: rgb(187, 88, 58);
+  background-color: #ffd297;
+  transform: scale(1.1);
+
+}
+
 .banner-opp {
   background-image: url("/images/tweet.png");
 
@@ -339,3 +353,4 @@ small {
   margin: -10%;
   margin-right: 0%;
 }
+
