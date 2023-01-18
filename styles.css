@@ -195,13 +195,13 @@ body {
 .btn-normal {
   transition: transform 0.2s;
   background-color: #051e3d;
-  color: white;
+  color: rgb(255,255,255);
 }
 
 .btn-normal:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(255,255,255);
   transform: scale(1.1);
-
+  background-color: rgb(25, 25, 85)
 }
 
 .btn-donate {
